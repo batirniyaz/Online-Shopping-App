@@ -57,6 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                 ), 
               visible: isError,
             ),
+            Padding(padding: EdgeInsets.all(10.0)),
             TextButton(
               style: TextButton.styleFrom(foregroundColor: Colors.green),
               onPressed: () {
