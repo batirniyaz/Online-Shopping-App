@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
       name: 'Apple, Fruit',
       description: 'Description 5',
       price: 500.0,
-      imageUrl: 'https://www.applesfromny.com/wp-content/uploads/2020/05/20Ounce_NYAS-Apples2.png',
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/1200px-Red_Apple.jpg',
     ),
     Product(
       name: 'Banana, Fruit',
@@ -60,7 +60,7 @@ class _HomePageState extends State<HomePage> {
       name: 'Potato, Vegetable',
       description: 'Description 8',
       price: 800.0,
-      imageUrl: 'https://images.seattletimes.com/wp-content/uploads/2024/04/04082024_OpEd-Potatoes_124536.jpg?d=2040x1488',
+      imageUrl: 'https://www.instacart.com/company/wp-content/uploads/2021/05/012_GRW_Blog-Images_Baking-Potatoes-1050x525.jpg',
     ),
     Product(
       name: 'Samsung, Phone',
@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 AspectRatio(
                   aspectRatio: 1.0,
-                  child: Image.network(products[index].imageUrl),
+                  child: Image.network(products[index].imageUrl, fit: BoxFit.cover,),
                 ),
                 ListTile(
                   title: Text(products[index].name),
