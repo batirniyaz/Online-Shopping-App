@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:online_shop/pages/LoginPage.dart';
 import 'package:online_shop/pages/HomePage.dart';
 import 'package:online_shop/models/Product.dart';
-// import 'package:online_shop/pages/AddNewProductPage.dart';
+import 'package:online_shop/pages/AddNewProductPage.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({
@@ -37,9 +37,9 @@ final _router = GoRouter(
         return HomePage(product: product);
       },
     ),
-    // GoRoute(
-    //   path: '/add-new-product',
-    //   pageBuilder: (context, state) => AddNewProductPage(),
-    // ),
+    GoRoute(
+      path: '/add-new-product',
+      pageBuilder: (context, state) => MaterialPage(child: AddNewProductPage()),
+    ),
   ],
 );
