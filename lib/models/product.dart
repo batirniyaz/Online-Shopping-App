@@ -1,8 +1,8 @@
 class Product {
-  final String name;
-  final String description;
-  final double price;
-  final String imageUrl;
+  String name;
+  String description;
+  double price;
+  String imageUrl;
 
   Product({
     required this.name,
