@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                 var psw = passwordController.text;
 
                 if (un == "admin" && psw == "admin123") {
-                  context.go('/add-new-product');
+                  context.push('/add-new-product');
                 } else {
                   setState(() {
                     isError = true;
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
               }, 
               child: Text(
                 "Login", 
-                style: TextStyle(color: Colors.blueAccent),
+                style: TextStyle(color: Colors.red[500], fontSize: 20.0),
               ),
             ),
           ],
