@@ -171,7 +171,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          context.go('/login');
+          context.push('/login');
         },
         child: Icon(Icons.add),
         backgroundColor: Colors.green,
